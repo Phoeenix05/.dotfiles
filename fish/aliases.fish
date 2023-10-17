@@ -13,8 +13,14 @@ alias search "zi"
 set EZA_ARGS "--all --icons --git --group-directories-first --color=automatic"
 
 alias ls "eza $EZA_ARGS"
-alias l "eza --tree --level 3 $EZA_ARGS --long --no-user"
+alias l "eza --tree --level 3 --git-ignore $EZA_ARGS --long --no-user"
 
 # bat ("cat" replacement)
 alias cat "bat"
+
+# git
+alias gs "git status"
+alias gd "git diff"
+alias stage "git add"
+alias unstage "git restore --staged ."
 
